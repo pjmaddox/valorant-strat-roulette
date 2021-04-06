@@ -202,6 +202,13 @@ export default [
         "defense": true,
         "specificMaps": []
     },
+    {
+        "name": "Baahubali's Trident Formation",
+        "description": "Send two members down mid, one strong player down the left flank and two remaining players down the right flank.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
     // {
     //     "name": "",
     //     "description": "",
