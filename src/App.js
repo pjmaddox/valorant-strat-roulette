@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import StratDisplay from "./components/StratDisplay";
+import { GetRandomStratForTeam } from "./services/stratService";
+import TeamConstants from "./constants/TeamConstants";
+import MapConstants from "./constants/MapConstants";
 
 function App() {
+
+  let [currentTeam, setCurrentTeam] = useState(TeamConstants.offense);
+  let [currentMap, setCurrentMap] = useState(MapConstants.Any);
+  let [currentStratData, setCurrentStratData] = useState( GetRandomStratForTeam(currentTeam, currentMap) );
+  
+  const getNewStratFunction = () => {
+    setCurrentStratData(GetRandomStratForTeam(currentTeam, currentMap));
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <StratDisplay 
+      stratData={currentStratData}
+      team={currentTeam}
+      map={currentMap}
+      changeStratFunction={getNewStratFunction}
+      changeCurrentMap={setCurrentMap}
+      changeTeam={setCurrentTeam} 
+    />
   );
 }
 
