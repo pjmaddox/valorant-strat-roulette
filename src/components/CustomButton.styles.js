@@ -5,7 +5,7 @@ import TeamConstants from "../constants/TeamConstants";
 //This looked like dogshit
 const handleSelectedStyles = (isSelected) => {
     if (isSelected) {
-        return `    
+        return `
         -moz-box-shadow:    inset 0 0 10px #000000;
         -webkit-box-shadow: inset 0 0 10px #000000;
         box-shadow:         inset 0 0 10px #000000;`
@@ -18,7 +18,6 @@ const handleSelectedStyles = (isSelected) => {
 }
 
 export const BaseButton = styled.button`
-    padding: 5px;
 `;
 
 export const NewStratButton = styled(BaseButton)`
@@ -34,11 +33,11 @@ export const BaseTeamButton = styled(BaseButton)`
 `;
 
 export const OffenseTeamButton = styled(BaseTeamButton)`
-    background-color: ${props => props.currentTeam == TeamConstants.offense? "darkred;" : "red;"}
-    disabled: ${props => props.currentTeam == TeamConstants.offense? true : false}
+    background-color: ${props => props.currentTeam === TeamConstants.offense? "darkred;" : "red;"}
+    disabled: ${props => props.currentTeam === TeamConstants.offense? true : false}
 `;
 
 export const DefenseTeamButton = styled(BaseTeamButton)`
-    background-color: ${props => props.currentTeam == TeamConstants.defense? "darkblue;" : "blue;"}
-    disabled: ${props => props.currentTeam == TeamConstants.defense? true : false}
+    background-color: ${props => props.currentTeam === TeamConstants.defense? "darkblue;" : "blue;"}
+    disabled: ${props => props.currentTeam === TeamConstants.defense? true : false}
 `;

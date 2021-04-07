@@ -4,7 +4,7 @@ import { MapSelectionDropdown } from "../components/MapSelection.styles";
 
 const MapSelection = ({currentlySelectedId, changeMapSelection}) => {
     const mapSelectOptions = Object.keys(MapConstants).map(function(x,i) {
-        
+
         return (
             <option value={i} key={`mapSelection-${x}`}>
                 { x }
@@ -13,7 +13,7 @@ const MapSelection = ({currentlySelectedId, changeMapSelection}) => {
     });
 
     return (
-        <MapSelectionDropdown onChange={(e) => {changeMapSelection(e.target.value); }} >
+        <MapSelectionDropdown onChange={(e) => changeMapSelection(Number(e.target.value))}>
             { mapSelectOptions }
         </MapSelectionDropdown>
     );
