@@ -16,7 +16,7 @@ const StratDisplay = ({stratData, team, changeStratFunction, changeTeam, map, ch
         else
             changeTeam(TeamConstants.offense)
     };
-    let teamDisplay = team == 0? "Offense" : "Defense";
+    let teamDisplay = team == TeamConstants.offense? "Offense" : "Defense";
 
     return (
         <StratiDisplayContainer>
@@ -25,7 +25,7 @@ const StratDisplay = ({stratData, team, changeStratFunction, changeTeam, map, ch
                 <CurrentMapLabel>Limit To Map:</CurrentMapLabel>
                 <MapSelection currentlySelectedId={map} changeMapSelection={changeCurrentMap} />
                 <button onClick={changeTeamHelper}>Swap Team</button>
-                <CurrentTeamDisplay>{teamDisplay}</CurrentTeamDisplay>
+                <CurrentTeamDisplay currentTeam={team}>{teamDisplay}</CurrentTeamDisplay>
             </ButtonContainer>
 
             <StratDisplayDiv>

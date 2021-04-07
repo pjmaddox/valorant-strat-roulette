@@ -6,7 +6,6 @@ export const StratiDisplayContainer = styled.div`
     justify-content: center;
     flex-direction: column;
 
-
     &::before {
         content: '';
         flex: 3;

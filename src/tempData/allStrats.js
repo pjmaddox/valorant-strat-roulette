@@ -202,12 +202,41 @@ export default [
         "defense": true,
         "specificMaps": []
     },
+    {
+        "name": "By our powers combined!",
+        "description": "Starting with bottom frag and moving up, each player buys armor if they can afford it and one pistol. No duplicates.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Variety is the spice of life",
+        "description": "Everyone must buy different guns",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "21 gun salute",
+        "description": "Bottom frag is now El Generalissimo. Do as they say. Everyone else must purchase a Marshal. In the case of the general's death, everyone must fire 3 rounds into the air before they may fire at enemies again.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Behind enemy lines",
+        "description": "You must make it to the attacker's spawn area before you may fire at enemies with your gun.",
+        "offense": false,
+        "defense": true,
+        "specificMaps": []
+    }
     // {
     //     "name": "",
     //     "description": "",
     //     "offense": true,
     //     "defense": true,
     //     "specificMaps": []
+    // }
 ]
 
 //Template
