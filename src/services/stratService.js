@@ -5,24 +5,24 @@ import { MapsAsDictionary } from "../constants/MapConstants";
 import MapConstants from "../constants/MapConstants";
 
 const allStratList = strats;
-const offenseStratList = _.filter(allStratList, function(x) { return x.offense == true; });
-const defenseStratList = _.filter(allStratList, function(x) { return x.defense == true; });
+const offenseStratList = _.filter(allStratList, function(x) { return x.offense === true; });
+const defenseStratList = _.filter(allStratList, function(x) { return x.defense === true; });
 
 function GetRandomStratFromList(list, mapId){
     let mapDatas = Object.values(MapsAsDictionary);
     let currentMapName = _.find(mapDatas, function(x) {
-        return x.value == mapId;
+        return x.value === mapId;
     }).name;
 
     let filteredList;
-    if(mapId == MapConstants.Any) {
+    if(mapId === MapConstants.Any) {
         filteredList = _.filter(list, function(strat) {
-            return strat.specificMaps.length == 0;
+            return strat.specificMaps.length === 0;
         });
     }
     else {
         filteredList = _.filter(list, function(strat) {
-            return strat.specificMaps.indexOf(currentMapName) >= 0 || strat.specificMaps.length == 0;
+            return strat.specificMaps.indexOf(currentMapName) >= 0 || strat.specificMaps.length === 0;
         });
     }
 
@@ -35,7 +35,7 @@ function GetRandomStratFromList(list, mapId){
 
 export function GetRandomStratForTeam(currentTeam, mapId) {
     var result;
-    if(currentTeam = TeamConstants.offense) {
+    if(currentTeam === TeamConstants.offense) {
         result = GetRandomStratFromList(offenseStratList, mapId);
     }
     else {
