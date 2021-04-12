@@ -1,10 +1,10 @@
 import React from 'react';
-import { StratTitleDiv, StratTitleParagraph } from './StratTitle.styles';
+import { StratTitleDiv } from './StratTitle.styles';
 
 const StratTitle = (props) => {
     return (
         <StratTitleDiv>
-            <b>Name: </b> <StratTitleParagraph> {props.name} </StratTitleParagraph>
+            {props.name}
         </StratTitleDiv>
     );
 }

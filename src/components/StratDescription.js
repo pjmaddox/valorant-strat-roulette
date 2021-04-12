@@ -5,7 +5,7 @@ const StratDescription = (props) => {
     console.log(props);
     return (
         <StratDescriptionDiv>
-            <b>Details: </b> <StratDetailsParagraph>{props.description}</StratDetailsParagraph>
+            <StratDetailsParagraph>{props.description}</StratDetailsParagraph>
         </StratDescriptionDiv>
     );
 }

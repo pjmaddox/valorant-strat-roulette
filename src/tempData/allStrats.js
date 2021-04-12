@@ -1,4 +1,4 @@
-export default [
+const allStrats = [
     {
         "name": "Bait and Switch",
         "description": "Have two people buy Marshalls and three people buy shotguns. Work in teams, use the Marshal players to bait enemies into charging, where your shotgun counterpart is waiting around the corner. See how many times the enemy team falls for it.",
@@ -341,3 +341,4 @@ export default [
 ////          Entering a single map name means that that is the only map this strat is available for
 ////          Title-case names, eg: "Bind", "Ascent", "Split"
 // }
+export default allStrats;
