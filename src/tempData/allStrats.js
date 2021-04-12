@@ -229,7 +229,98 @@ export default [
         "offense": false,
         "defense": true,
         "specificMaps": []
-    }
+    },
+    {
+        "name": "Baahubali's Trident Formation",
+        "description": "Send two members down mid, one strong player down the left flank and two remaining players down the right flank.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "They can't hear me if I can't hear me",
+        "description": "You may only communicate with your team while firing",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Hold the line",
+        "description": "Choose a point. Until the spike is planted, the entire team cannot leave the point.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "I've got your back!",
+        "description": "The top 4 fraggers must split into pairs, doing their best to walk back-to-back.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Surprise party!",
+        "description": "Choose a small room or corridor. Everyone posts at different angles and stays until either one team is dead, or the spike is planted.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Marshall may I?",
+        "description": "The entire team buys marshalls. After the first person fires, the team may move. When another marshall shot goes off, everyone must stop moving. Continue alternating with each Marshall shot.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "I'm bringing you in",
+        "description": "You may only buy the marshall, bucky, or sheriff this round. You may choose to challenge the enemy team to a shootout mid.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Nothing personnel, kid.",
+        "description": "Get at least one person behind enemy lines and deliver a killing blow from the rear without them noticing.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "It'll cost you an arm and a leg!",
+        "description": "Throw the gaudiest-looking, most expensive weapon your team can afford around a corner and wait on the other side. When you hear or see someone pick it up, round the corner and kill them during the weapon swap animation.",
+        "offense": false,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Jeopardy!",
+        "description": "Your team may only communicate in the form of questions. (Unrated only): Every time you fail to do so, you must buy a pistol that you cannot sell back at the beginning of next round, starting with the least expensive and going to the most expensive, continuing back around if required.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Gift of the Magi",
+        "description": "Everone buys the most expensive gun they can for the person above them, the top fragger buys for bottom frag.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "Master and Commander",
+        "description": "(Requires a spectator in discord or the game): No one can communicate. The Commander must do their best to monitor all teammates and issue orders.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
+    {
+        "name": "By the light of my gun (placeholder)",
+        "description": "Unless firing, you must close your eyes.",
+        "offense": true,
+        "defense": true,
+        "specificMaps": []
+    },
     // {
     //     "name": "",
     //     "description": "",
