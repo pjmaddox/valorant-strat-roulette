@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import styled from 'styled-components';
 import TeamConstants from "../constants/TeamConstants";
 
@@ -104,5 +105,5 @@ export const CurrentTeamDisplay = styled.span`
 export const CurrentMapLabel = styled(CurrentTeamDisplay)`
     padding: 5px;
     margin-left: 5px;
-    margin-right: 0.5rem;
+    margin-right: 0.5rem;W
 `;
