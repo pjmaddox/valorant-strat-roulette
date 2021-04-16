@@ -1,21 +1,19 @@
 import styled from 'styled-components';
 import TeamConstants from "../constants/TeamConstants";
 
-
-//This looked like dogshit
-const handleSelectedStyles = (isSelected) => {
-    if (isSelected) {
-        return `
-        -moz-box-shadow:    inset 0 0 10px #000000;
-        -webkit-box-shadow: inset 0 0 10px #000000;
-        box-shadow:         inset 0 0 10px #000000;`
-    }
-    else {
-        return `-moz-box-shadow: none;
-        -webkit-box-shadow: none;
-        box-shadow: none;`
-    }
-}
+// const handleSelectedStyles = (isSelected) => {
+//     if (isSelected) {
+//         return `
+//         -moz-box-shadow:    inset 0 0 10px #000000;
+//         -webkit-box-shadow: inset 0 0 10px #000000;
+//         box-shadow:         inset 0 0 10px #000000;`
+//     }
+//     else {
+//         return `-moz-box-shadow: none;
+//         -webkit-box-shadow: none;
+//         box-shadow: none;`
+//     }
+// }
 
 export const BaseButton = styled.button`
 `;
